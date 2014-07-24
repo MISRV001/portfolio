@@ -1,0 +1,18 @@
+<div class="jumbotron">
+  <div ng-init="items=[
+  'a',
+  'as',
+  'asd',
+  'asdf',
+  'asdfg',
+  'asdfgh',
+  'asdfghj',
+  'asdfghjk',
+  'asdfghjkl'
+  ]">
+    <input placeholder="Filter Repeat Items..." ng-model="f" /> 
+    <div data-ng-repeat="item in items | filter:f track by item" class="my-repeat-animation">
+      {{item}}
+    </div>
+  </div>
+</div>
