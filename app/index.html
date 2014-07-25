@@ -22,11 +22,11 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="header">
+      <div class="header" ng-controller="navbarController">
         <ul class="nav nav-pills pull-right">
-          <li ngClass="{active: isActive('#/')}"><a ng-href="#">Home</a></li>
-          <li ngClass="{active: isActive('#/about')}"><a ng-href="#/about">About</a></li>
-          <li ngClass="{active: isActive('#/contact')}"><a ng-href="#">Contact</a></li>
+          <li ng-class="{active: isActive('/')}"><a ng-href="#">Home</a></li>
+          <li ng-class="{active: isActive('/about')}"><a ng-href="#/about">About</a></li>
+          <li ng-class="{active: isActive('/contact')}"><a ng-href="#">Contact</a></li>
         </ul>
         <h3 class="text-muted">My Portfolio</h3>
       </div>
